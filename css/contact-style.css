@@ -1,0 +1,28 @@
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col {
+    text-align: center;
+    margin: 5%;
+}
+
+.col > a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.col > em {
+    font-size: 200%;
+}
+
+.logo {
+    width: 200px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 250%;
+}

@@ -1,0 +1,16 @@
+main {
+    height: 33rem;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+#avatar {
+    max-width: 400px;
+    left: 0;
+}
+
+.col {
+    margin: 5%;
+}
