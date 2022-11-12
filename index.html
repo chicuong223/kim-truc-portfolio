@@ -12,60 +12,209 @@
         />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/home-style.css" />
+        <link rel="stylesheet" href="css/gallery-style.css" />
+        <link rel="stylesheet" href="css/contact-style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Lexend&display=swap"
             rel="stylesheet"
         />
+        <script src="js/script.js"></script>
     </head>
     <body>
         <header>
             <nav>
                 <ul>
-                    <li class="nav-item active">
-                        <a href="#">Home</a>
+                    <li class="nav-item">
+                        <a href="#"" onclick="scrollToSection('home')">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="gallery.html">Gallery</a>
+                        <a href="#" onclick="scrollToSection('gallery')">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.html">Liên hệ</a>
+                        <a href="#" onclick="scrollToSection('contact')">Liên hệ</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main>
-            <div class="container">
+            <section class="container" id="home">
                 <div class="col">
                     <img src="./assets/avatar.jpg" alt="avatar" id="avatar" />
                 </div>
-                <div id="home" class="col">
-                    <h1>Xin chào</h1>
-                    <h4>Mình là Trần Lai Kim Trúc</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Risus in hendrerit gravida rutrum quisque
-                        non tellus orci. Euismod nisi porta lorem mollis aliquam
-                        ut porttitor leo a. Ornare arcu dui vivamus arcu felis
-                        bibendum ut tristique et. Viverra mauris in aliquam sem
-                        fringilla ut morbi. Neque volutpat ac tincidunt vitae
-                        semper quis lectus. Netus et malesuada fames ac turpis
-                        egestas sed. Mi eget mauris pharetra et ultrices neque.
-                        Vestibulum lectus mauris ultrices eros in cursus. Dolor
-                        sit amet consectetur adipiscing elit ut aliquam purus.
-                        Laoreet sit amet cursus sit amet dictum sit amet. Non
-                        consectetur a erat nam at. Cras ornare arcu dui vivamus
-                        arcu felis bibendum ut. Eu tincidunt tortor aliquam
-                        nulla facilisi. Cras ornare arcu dui vivamus arcu felis
-                        bibendum. Varius duis at consectetur lorem donec massa
-                        sapien faucibus. Vitae ultricies leo integer malesuada
-                        nunc vel risus commodo viverra. Fames ac turpis egestas
-                        maecenas.
-                    </p>
+                <div class="col">
+                    <h1 class="hello-text">
+                        Xin chào, mình là Trần Lai Kim Trúc
+                    </h1>
                 </div>
-            </div>
+            </section>
+            <section id="gallery">
+                <!-- <h1>Portfolio</h1> -->
+                <table id="images">
+                    <th>
+                        <tr>
+                            <td>
+                                <h1>
+                                    Gallery
+                                </h1>
+                                <button id="slideshow-toggle" type="button">
+                                    Slideshow
+                                </button>
+                            </td>
+                        </tr>
+                    </th>
+                    <tr>
+                        <td class="gallery-item">
+                            <img
+                                src="./assets/314380149_1140309283287095_820804638261030418_n.jpg"
+                                alt="img-1"
+                            />
+                        </td>
+                        <td class="gallery-item">
+                            <img
+                                src="./assets/314395955_516062780394080_1449349746433748847_n.jpg"
+                                alt="img-1"
+                            />
+                        </td>
+                        <td class="gallery-item">
+                            <img
+                                src="./assets/314397206_1142925299930213_6978314546141139042_n.jpg"
+                                alt="img-1"
+                            />
+                        </td>
+                        <td class="gallery-item">
+                            <img
+                                src="./assets/314425254_407695068101814_6388059130551683466_n.jpg"
+                                alt="img-1"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="gallery-item">
+                            <img
+                                src="./assets/314467561_466812348662729_8060261413114139949_n.jpg"
+                                alt="img-1"
+                            />
+                        </td>
+                        <td class="gallery-item">
+                            <img
+                                src="./assets/314715342_5736776079702549_7602414530804899924_n.jpg"
+                                alt="img-1"
+                            />
+                        </td>
+                        <td class="gallery-item">
+                            <img
+                                src="./assets/315187512_1094581497867861_8215325036281079812_n.jpg"
+                                alt="img-1"
+                            />
+                        </td>
+                    </tr>
+                </table>
+                <div class="slideshow-container modal" id="slideshow">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="slide fade">
+                            <div class="numbertext">1 / 7</div>
+                            <img
+                                src="./assets/314380149_1140309283287095_820804638261030418_n.jpg"
+                                alt="img-1"
+                            />
+                        </div>
+
+                        <div class="slide fade">
+                            <div class="numbertext">2 / 7</div>
+                            <img
+                                src="./assets/314395955_516062780394080_1449349746433748847_n.jpg"
+                                alt="img-1"
+                            />
+                        </div>
+                        <div class="slide fade">
+                            <div class="numbertext">3 / 7</div>
+                            <img
+                                src="./assets/314397206_1142925299930213_6978314546141139042_n.jpg"
+                                alt="img-1"
+                            />
+                        </div>
+                        <div class="slide fade">
+                            <div class="numbertext">4 / 7</div>
+                            <img
+                                src="./assets/314425254_407695068101814_6388059130551683466_n.jpg"
+                                alt="img-1"
+                            />
+                        </div>
+                        <div class="slide fade">
+                            <div class="numbertext">5 / 7</div>
+                            <img
+                                src="./assets/314467561_466812348662729_8060261413114139949_n.jpg"
+                                alt="img-1"
+                            />
+                        </div>
+                        <div class="slide fade">
+                            <div class="numbertext">6 / 7</div>
+                            <img
+                                src="./assets/314715342_5736776079702549_7602414530804899924_n.jpg"
+                                alt="img-1"
+                            />
+                        </div>
+                        <div class="slide fade">
+                            <div class="numbertext">7 / 7</div>
+                            <img
+                                src="./assets/315187512_1094581497867861_8215325036281079812_n.jpg"
+                                alt="img-1"
+                            />
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <h1>Liên hệ</h1>
+                <div class="container">
+                    <div class="col">
+                        <a href="https://www.facebook.com/subj.ken.1">
+                            <img
+                                src="./assets/facebook-logo.png"
+                                alt="fb"
+                                class="logo"
+                            />
+                            <p>https://www.facebook.com/subj.ken.1</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <img
+                                src="./assets/phone-logo.png"
+                                alt="phone"
+                                class="logo"
+                            />
+                            <p>0123 234 234</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <img
+                                src="./assets/email-logo.png"
+                                alt="email"
+                                class="logo"
+                            />
+                            <p>abc@gmail.com</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <img
+                                src="./assets/location-logo.png"
+                                alt="location"
+                                class="logo"
+                            />
+                            <p>Ho Chi Minh City, Vietnam</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer>
             <em class="fa-regular fa-copyright"></em> Tran Lai Kim Truc 2022
