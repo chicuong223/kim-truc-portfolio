@@ -26,6 +26,16 @@ nav {
     box-shadow: 0px 5px 5px #dcdcdc;
 }
 
+nav ul {
+    display: inline-block;
+    width: 75%;
+}
+
+.app-logo {
+    float: left;
+    width: 5%;
+}
+
 .nav-item {
     display: inline;
     font-size: 125%;
